@@ -1,0 +1,16 @@
+#pragma once
+#include<stdlib.h>
+
+struct Node {
+	char data[100];
+	struct Node* front;
+	struct Node* next;
+};
+
+struct Node* getBufNode(void);
+struct Node* addBuf(struct Node* buf, int* n, char c);
+char BufChar(struct Node* buf, int i);
+struct Node* decBufIndex(struct Node* buf, int* k);
+struct Node* incBufIndex(struct Node* buf, int* k);
+struct Node* delBufChar(struct Node* buft, int* k);
+void printbuf(struct Node* buf_head);
